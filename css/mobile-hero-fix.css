@@ -1,0 +1,643 @@
+/* ========================================
+   MOBILE HERO FIX - FORCE OVERRIDE
+   Loads last to fix mobile hero layout
+   ======================================== */
+
+/* Mobile Only - Force Override */
+@media (max-width: 768px) {
+
+    /* HERO SECTION - Compact Layout */
+    .hero {
+        min-height: auto !important;
+        padding: calc(var(--header-height) + 30px) 0 30px !important;
+    }
+
+    /* Hero Content - Flexbox Column */
+    .hero-content {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 0 !important;
+        grid-template-columns: unset !important;
+    }
+
+    /* Hero Text - Use Contents for Order */
+    .hero-text {
+        display: contents !important;
+    }
+
+    /* ORDER 1: TITLE */
+    .hero-text h1 {
+        order: 1 !important;
+        font-size: 2.2rem !important;
+        line-height: 1.2 !important;
+        margin: 0 0 10px 0 !important;
+        padding: 0 10px 15px 10px !important;
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .hero-text h1::after {
+        height: 10px !important;
+        left: 10% !important;
+        right: 10% !important;
+        width: 80% !important;
+    }
+
+    /* ORDER 2: IMAGE */
+    .hero-image {
+        order: 2 !important;
+        margin: 5px 0 10px 0 !important;
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        position: relative !important;
+        z-index: 2 !important;
+    }
+
+    .hero-img-mask {
+        max-width: 100% !important;
+        width: 85% !important;
+    }
+
+    /* ORDER 3: PARAGRAPH */
+    .hero-text p {
+        order: 3 !important;
+        font-size: 1.05rem !important;
+        line-height: 1.5 !important;
+        margin: 10px auto 0 auto !important;
+        padding: 18px 22px 50px 22px !important;
+        max-width: 90% !important;
+        text-align: center !important;
+        width: 90% !important;
+        position: relative !important;
+        z-index: 1 !important;
+    }
+
+    .hero-text p::before {
+        font-size: 2.2rem !important;
+        top: -6px !important;
+        left: 8px !important;
+    }
+
+    /* ORDER 4: BUTTONS (Overlay on paragraph) */
+    .hero-text div {
+        order: 4 !important;
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        margin-top: -35px !important;
+        position: relative !important;
+        z-index: 10 !important;
+        gap: 10px !important;
+    }
+
+    /* BUTTONS - Centered with Touch Targets */
+    .hero-text div .btn,
+    .hero .btn {
+        padding: 14px 30px !important;
+        font-size: 1rem !important;
+        margin: 0 auto !important;
+        display: block !important;
+        width: auto !important;
+        min-width: 200px !important;
+        min-height: 44px !important;
+        text-align: center !important;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15) !important;
+    }
+
+    /* Transformer Cube - Mobile Size */
+    .transformer-container {
+        width: 110px !important;
+        height: 110px !important;
+        top: 8% !important;
+        right: 5% !important;
+        z-index: 1 !important;
+        opacity: 0.85 !important;
+    }
+
+    .face {
+        width: 110px !important;
+        height: 110px !important;
+        font-size: 30px !important;
+    }
+
+    .face:nth-child(1) {
+        transform: rotateY(0deg) translateZ(55px) !important;
+    }
+
+    .face:nth-child(2) {
+        transform: rotateY(90deg) translateZ(55px) !important;
+    }
+
+    .face:nth-child(3) {
+        transform: rotateY(180deg) translateZ(55px) !important;
+    }
+
+    .face:nth-child(4) {
+        transform: rotateY(-90deg) translateZ(55px) !important;
+    }
+
+    .face:nth-child(5) {
+        transform: rotateX(90deg) translateZ(55px) !important;
+    }
+
+    .face:nth-child(6) {
+        transform: rotateX(-90deg) translateZ(55px) !important;
+    }
+}
+
+/* Extra Small Mobile - Additional Adjustments */
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 1.9rem !important;
+        padding-bottom: 12px !important;
+    }
+
+    .hero-text p {
+        font-size: 1rem !important;
+        padding: 16px 20px 48px 20px !important;
+    }
+
+    .hero-text div {
+        margin-top: -33px !important;
+    }
+
+    .btn {
+        min-width: 180px !important;
+        padding: 12px 25px !important;
+    }
+}
+/* ========================================
+   NAVBAR YELLOW SCRIBBLE UNDERLINE
+   Desktop only - dashed effect
+   ======================================== */
+
+/* Desktop Navbar Links - Yellow Scribble Underline */
+@media (min-width: 769px) {
+    .nav-links a {
+        position: relative !important;
+        padding-bottom: 8px !important;
+    }
+
+    .nav-links a::after {
+        content: '' !important;
+        position: absolute !important;
+        bottom: -3px !important;
+        left: 0 !important;
+        right: 0 !important;
+        height: 6px !important;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 5"><path d="M0,2.5 Q5,1 10,2.5 T20,2.5 Q25,4 30,2.5 T40,2.5 Q45,1 50,2.5 T60,2.5 Q65,4 70,2.5 T80,2.5 Q85,1 90,2.5 T100,2.5" stroke="%23FFD700" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-dasharray="3,2"/></svg>') !important;
+        background-repeat: no-repeat !important;
+        background-size: 0 100% !important;
+        background-position: left center !important;
+        transition: background-size 0.4s ease !important;
+        opacity: 0 !important;
+        display: block !important;
+    }
+
+    .nav-links a:hover::after {
+        background-size: 100% 100% !important;
+        opacity: 1 !important;
+    }
+}
+
+/* ========================================
+   LANGUAGE BUTTON VISIBILITY - MOBILE
+   Ensure only active language buttons show
+   ======================================== */
+
+@media (max-width: 768px) {
+    /* Hide BM buttons when English is active */
+    body.lang-en .btn[data-lang="bm"] {
+        display: none !important;
+    }
+
+    /* Hide EN buttons when Malay is active */
+    body.lang-bm .btn[data-lang="en"] {
+        display: none !important;
+    }
+}
+
+/* FINAL MOBILE ADJUSTMENTS - Tighter spacing */
+@media (max-width: 768px) {
+    .hero {
+        padding: calc(var(--header-height) + 20px) 0 20px !important;
+    }
+
+    .hero-image {
+        margin: 0 0 5px 0 !important;
+    }
+
+    .hero-text p {
+        margin: 5px auto 0 auto !important;
+        padding: 15px 20px 55px 20px !important;
+    }
+
+    .hero-text div {
+        margin-top: -45px !important;
+    }
+
+    .edu-text-3 {
+        bottom: 10% !important;
+        left: 5% !important;
+        top: auto !important;
+        font-size: 3.5rem !important;
+        opacity: 0.5 !important;
+    }
+
+    .edu-text-1 {
+        top: 15% !important;
+        left: 8% !important;
+        font-size: 2.5rem !important;
+    }
+
+    .edu-text-2 {
+        display: none !important;
+    }
+
+    .edu-text-5 {
+        bottom: 25% !important;
+        left: 10% !important;
+        font-size: 2.8rem !important;
+    }
+
+    .edu-text-6 {
+        top: 35% !important;
+        left: 75% !important;
+        font-size: 2.2rem !important;
+    }
+}
+
+/* EVEN TIGHTER SPACING - Mobile Only */
+@media (max-width: 768px) {
+    .hero-image {
+        margin: 0 0 0 0 !important;
+    }
+
+    .hero-text p {
+        margin: -5px auto 0 auto !important;
+        padding: 15px 20px 55px 20px !important;
+    }
+
+    .hero-text div {
+        margin-top: -50px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text p {
+        margin: -8px auto 0 auto !important;
+    }
+}
+
+/* PROPER MOBILE LAYOUT - Title lower, everything connected */
+@media (max-width: 768px) {
+    /* Restore hero section height */
+    .hero {
+        padding: calc(var(--header-height) + 60px) 0 40px !important;
+        min-height: auto !important;
+    }
+
+    /* Push title down and closer to image */
+    .hero-text h1 {
+        margin: 30px 0 0 0 !important;
+        padding: 0 10px 10px 10px !important;
+    }
+
+    /* Image directly below title - no gap */
+    .hero-image {
+        margin: -5px 0 0 0 !important;
+    }
+
+    /* Paragraph directly below image - connected */
+    .hero-text p {
+        margin: -10px auto 0 auto !important;
+        padding: 15px 20px 55px 20px !important;
+    }
+
+    /* Buttons overlaid on paragraph */
+    .hero-text div {
+        margin-top: -50px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: calc(var(--header-height) + 50px) 0 35px !important;
+    }
+    
+    .hero-text h1 {
+        margin: 25px 0 0 0 !important;
+    }
+}
+
+/* FINAL FIX - Everything connected, pushed down */
+@media (max-width: 768px) {
+    /* More space at top, push everything down */
+    .hero {
+        padding: calc(var(--header-height) + 80px) 0 40px !important;
+    }
+
+    /* Title even lower */
+    .hero-text h1 {
+        margin: 40px 0 5px 0 !important;
+        padding: 0 10px 10px 10px !important;
+    }
+
+    /* Image close to title */
+    .hero-image {
+        margin: 0 0 0 0 !important;
+    }
+
+    /* Paragraph DIRECTLY below image - strong negative margin */
+    .hero-text p {
+        margin: -20px auto 0 auto !important;
+        padding: 15px 20px 55px 20px !important;
+    }
+
+    /* Buttons strongly overlaid */
+    .hero-text div {
+        margin-top: -55px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: calc(var(--header-height) + 70px) 0 35px !important;
+    }
+    
+    .hero-text h1 {
+        margin: 35px 0 5px 0 !important;
+    }
+
+    .hero-text p {
+        margin: -25px auto 0 auto !important;
+    }
+}
+
+/* ULTIMATE FIX - P box and buttons MUCH higher */
+@media (max-width: 768px) {
+    /* Paragraph MUCH closer to image - super strong negative margin */
+    .hero-text p {
+        margin: -40px auto 0 auto !important;
+        padding: 15px 20px 60px 20px !important;
+    }
+
+    /* Buttons even more overlaid */
+    .hero-text div {
+        margin-top: -60px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text p {
+        margin: -45px auto 0 auto !important;
+        padding: 15px 20px 58px 20px !important;
+    }
+
+    .hero-text div {
+        margin-top: -58px !important;
+    }
+}
+
+/* EVEN HIGHER + BUTTON FIXES */
+@media (max-width: 768px) {
+    /* Pull paragraph even MORE up */
+    .hero-text p {
+        margin: -50px auto 0 auto !important;
+        padding: 15px 20px 65px 20px !important;
+    }
+
+    /* Buttons pulled MORE up */
+    .hero-text div {
+        margin-top: -65px !important;
+        gap: 5px !important;
+    }
+
+    /* Make both buttons same width and size */
+    .hero-text div .btn {
+        min-width: 240px !important;
+        max-width: 240px !important;
+        width: 240px !important;
+        padding: 14px 20px !important;
+        margin: 0 auto !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text p {
+        margin: -55px auto 0 auto !important;
+        padding: 15px 18px 63px 18px !important;
+    }
+
+    .hero-text div {
+        margin-top: -63px !important;
+        gap: 4px !important;
+    }
+
+    .hero-text div .btn {
+        min-width: 220px !important;
+        max-width: 220px !important;
+        width: 220px !important;
+    }
+}
+
+/* EVEN HIGHER + Button fixes */
+@media (max-width: 768px) {
+    /* P box even higher */
+    .hero-text p {
+        margin: -50px auto 0 auto !important;
+        padding: 15px 20px 65px 20px !important;
+    }
+
+    /* Buttons higher and closer together */
+    .hero-text div {
+        margin-top: -65px !important;
+        gap: 8px !important;
+    }
+
+    /* Make both buttons same size */
+    .hero .btn-primary,
+    .hero .btn-secondary {
+        min-width: 200px !important;
+        width: 200px !important;
+        padding: 14px 30px !important;
+        font-size: 1rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text p {
+        margin: -55px auto 0 auto !important;
+        padding: 15px 18px 62px 18px !important;
+    }
+
+    .hero-text div {
+        margin-top: -62px !important;
+        gap: 6px !important;
+    }
+
+    .hero .btn-primary,
+    .hero .btn-secondary {
+        width: 180px !important;
+        min-width: 180px !important;
+        padding: 12px 25px !important;
+    }
+}
+
+/* PERFECT FINAL ADJUSTMENTS */
+@media (max-width: 768px) {
+    /* Longer hero section */
+    .hero {
+        padding: calc(var(--header-height) + 80px) 0 60px !important;
+    }
+
+    /* Buttons less overlaid - lower position */
+    .hero-text div {
+        margin-top: -50px !important;
+        gap: 0 !important;
+    }
+
+    /* Both buttons EXACT same size */
+    .hero .btn,
+    .hero .btn-primary,
+    .hero .btn-secondary {
+        min-width: 200px !important;
+        max-width: 200px !important;
+        width: 200px !important;
+        height: 50px !important;
+        min-height: 50px !important;
+        padding: 14px 30px !important;
+        font-size: 1rem !important;
+        line-height: 1.4 !important;
+        margin: 0 auto !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: calc(var(--header-height) + 70px) 0 50px !important;
+    }
+
+    .hero-text div {
+        margin-top: -45px !important;
+    }
+
+    .hero .btn,
+    .hero .btn-primary,
+    .hero .btn-secondary {
+        width: 180px !important;
+        min-width: 180px !important;
+        max-width: 180px !important;
+        height: 48px !important;
+        min-height: 48px !important;
+        padding: 12px 25px !important;
+    }
+}
+
+/* Move Alif Ba Ta next to XYZ - visible position */
+@media (max-width: 768px) {
+    /* Alif Ba Ta - move to right side next to XYZ */
+    .edu-text-3 {
+        bottom: 25% !important;
+        left: auto !important;
+        right: 8% !important;
+        top: auto !important;
+        font-size: 3.5rem !important;
+        opacity: 0.5 !important;
+        z-index: 0 !important;
+    }
+
+    /* XYZ - keep on left */
+    .edu-text-5 {
+        bottom: 20% !important;
+        left: 5% !important;
+        font-size: 2.8rem !important;
+        opacity: 0.4 !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .edu-text-3 {
+        bottom: 22% !important;
+        right: 5% !important;
+        font-size: 3rem !important;
+    }
+}
+
+/* Move educational text MUCH HIGHER - above the box */
+@media (max-width: 768px) {
+    /* XYZ - move much higher */
+    .edu-text-5 {
+        bottom: 45% !important;
+        left: 5% !important;
+        font-size: 2.8rem !important;
+        opacity: 0.4 !important;
+    }
+
+    /* Alif Ba Ta - move much higher */
+    .edu-text-3 {
+        bottom: 42% !important;
+        left: auto !important;
+        right: 8% !important;
+        top: auto !important;
+        font-size: 3.5rem !important;
+        opacity: 0.5 !important;
+        z-index: 0 !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .edu-text-5 {
+        bottom: 48% !important;
+        font-size: 2.5rem !important;
+    }
+
+    .edu-text-3 {
+        bottom: 45% !important;
+        right: 5% !important;
+        font-size: 3rem !important;
+    }
+}
+
+/* Position in the GAP between image and paragraph box */
+@media (max-width: 768px) {
+    /* XYZ - in the gap */
+    .edu-text-5 {
+        bottom: 32% !important;
+        left: 5% !important;
+        font-size: 2.5rem !important;
+        opacity: 0.45 !important;
+        z-index: 1 !important;
+    }
+
+    /* Alif Ba Ta - in the gap */
+    .edu-text-3 {
+        bottom: 30% !important;
+        left: auto !important;
+        right: 8% !important;
+        top: auto !important;
+        font-size: 3rem !important;
+        opacity: 0.5 !important;
+        z-index: 1 !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .edu-text-5 {
+        bottom: 34% !important;
+        font-size: 2.2rem !important;
+    }
+
+    .edu-text-3 {
+        bottom: 32% !important;
+        right: 5% !important;
+        font-size: 2.8rem !important;
+    }
+}
