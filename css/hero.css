@@ -15,6 +15,14 @@
     background-color: var(--bg-mint);
 }
 
+/* Shorten hero section for web only */
+@media (min-width: 769px) {
+    .hero {
+        min-height: 40vh;
+        padding-bottom: 10px;
+    }
+}
+
 /* Hero Decorations Container */
 .hero-bg-shapes {
     position: absolute;
@@ -42,7 +50,7 @@
 .edu-text-1 {
     font-size: 6rem;
     color: #FF6B9D;
-    top: 10%;
+    top: 18%;
     left: 5%;
     animation-delay: 0s;
 }
@@ -61,6 +69,41 @@
     bottom: 5%;
     left: 10%;
     animation-delay: 4s;
+}
+
+/* Center and move up Arabic text for web version only */
+@media (min-width: 769px) {
+    .edu-text-3 {
+        left: 50% !important;
+        transform: translateX(-50%);
+        bottom: 20% !important;
+        right: auto !important;
+    }
+    
+    /* Ensure animation still works with centering */
+    @keyframes floatTextCentered {
+        0%,
+        100% {
+            transform: translateX(-50%) translateY(0) rotate(0deg);
+            opacity: 0.3;
+        }
+        25% {
+            transform: translateX(-50%) translateY(-20px) rotate(5deg);
+            opacity: 0.4;
+        }
+        50% {
+            transform: translateX(-50%) translateY(-10px) rotate(-3deg);
+            opacity: 0.35;
+        }
+        75% {
+            transform: translateX(-50%) translateY(-15px) rotate(3deg);
+            opacity: 0.45;
+        }
+    }
+    
+    .edu-text-3 {
+        animation-name: floatTextCentered;
+    }
 }
 
 .edu-text-4 {
@@ -85,19 +128,6 @@
     top: 20%;
     left: 35%;
     animation-delay: 5s;
-}
-
-/* Desktop specific adjustments for animations */
-@media (min-width: 769px) {
-    .edu-text-1 {
-        top: 20%;
-        /* Lower a bit from 10% */
-    }
-
-    .edu-text-3 {
-        left: 25%;
-        /* Center a bit from 10% */
-    }
 }
 
 @keyframes floatText {
@@ -148,12 +178,13 @@
 }
 
 .shape-2 {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     background: linear-gradient(135deg, var(--accent-blue), var(--bg-sky));
-    bottom: -80px;
+    bottom: -120px;
     right: -80px;
     animation-delay: 2s;
+    animation-duration: 5s;
 }
 
 .shape-3 {

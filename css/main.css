@@ -4,25 +4,25 @@
    ========================================== */
 
 /* 1. Variables - Colors, fonts, spacing */
-@import url('variables.css');
+@import url('variables.css?v=2');
 
 /* 2. Base - Reset, body, typography, utilities */
-@import url('base.css');
+@import url('base.css?v=2');
 
 /* 3. Navbar - Fixed navigation */
-@import url('navbar.css');
+@import url('navbar.css?v=2');
 
 /* 4. Hero - Main hero section with all decorations */
-@import url('hero.css');
+@import url('hero.css?v=2');
 
 /* 5. Sections - Programs, gallery, testimonials */
-@import url('sections.css');
+@import url('sections.css?v=2');
 
 /* 6. Contact & Footer */
-@import url('contact-footer.css');
+@import url('contact-footer.css?v=2');
 
 /* 7. Responsive - All media queries */
-@import url('responsive.css');
+@import url('responsive.css?v=2');
 
 /* ==========================================
    ✅ MODULAR CSS STRUCTURE COMPLETE!

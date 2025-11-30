@@ -170,6 +170,7 @@
         padding: 12px 25px !important;
     }
 }
+
 /* ========================================
    NAVBAR YELLOW SCRIBBLE UNDERLINE
    Desktop only - dashed effect
@@ -191,16 +192,16 @@
         height: 6px !important;
         background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 5"><path d="M0,2.5 Q5,1 10,2.5 T20,2.5 Q25,4 30,2.5 T40,2.5 Q45,1 50,2.5 T60,2.5 Q65,4 70,2.5 T80,2.5 Q85,1 90,2.5 T100,2.5" stroke="%23FFD700" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-dasharray="3,2"/></svg>') !important;
         background-repeat: no-repeat !important;
-        background-size: 0 100% !important;
+        background-size: 100% 100% !important;
         background-position: left center !important;
-        transition: background-size 0.4s ease !important;
-        opacity: 0 !important;
+        transition: none !important;
+        opacity: 1 !important;
         display: block !important;
     }
 
     .nav-links a:hover::after {
-        background-size: 100% 100% !important;
         opacity: 1 !important;
+        transform: none !important;
     }
 }
 
@@ -210,6 +211,7 @@
    ======================================== */
 
 @media (max-width: 768px) {
+
     /* Hide BM buttons when English is active */
     body.lang-en .btn[data-lang="bm"] {
         display: none !important;
@@ -295,6 +297,7 @@
 
 /* PROPER MOBILE LAYOUT - Title lower, everything connected */
 @media (max-width: 768px) {
+
     /* Restore hero section height */
     .hero {
         padding: calc(var(--header-height) + 60px) 0 40px !important;
@@ -328,7 +331,7 @@
     .hero {
         padding: calc(var(--header-height) + 50px) 0 35px !important;
     }
-    
+
     .hero-text h1 {
         margin: 25px 0 0 0 !important;
     }
@@ -336,6 +339,7 @@
 
 /* FINAL FIX - Everything connected, pushed down */
 @media (max-width: 768px) {
+
     /* More space at top, push everything down */
     .hero {
         padding: calc(var(--header-height) + 80px) 0 40px !important;
@@ -368,7 +372,7 @@
     .hero {
         padding: calc(var(--header-height) + 70px) 0 35px !important;
     }
-    
+
     .hero-text h1 {
         margin: 35px 0 5px 0 !important;
     }
@@ -380,6 +384,7 @@
 
 /* ULTIMATE FIX - P box and buttons MUCH higher */
 @media (max-width: 768px) {
+
     /* Paragraph MUCH closer to image - super strong negative margin */
     .hero-text p {
         margin: -40px auto 0 auto !important;
@@ -405,6 +410,7 @@
 
 /* EVEN HIGHER + BUTTON FIXES */
 @media (max-width: 768px) {
+
     /* Pull paragraph even MORE up */
     .hero-text p {
         margin: -50px auto 0 auto !important;
@@ -447,6 +453,7 @@
 
 /* EVEN HIGHER + Button fixes */
 @media (max-width: 768px) {
+
     /* P box even higher */
     .hero-text p {
         margin: -50px auto 0 auto !important;
@@ -490,6 +497,7 @@
 
 /* PERFECT FINAL ADJUSTMENTS */
 @media (max-width: 768px) {
+
     /* Longer hero section */
     .hero {
         padding: calc(var(--header-height) + 80px) 0 60px !important;
@@ -543,6 +551,7 @@
 
 /* Move Alif Ba Ta next to XYZ - visible position */
 @media (max-width: 768px) {
+
     /* Alif Ba Ta - move to right side next to XYZ */
     .edu-text-3 {
         bottom: 25% !important;
@@ -573,6 +582,7 @@
 
 /* Move educational text MUCH HIGHER - above the box */
 @media (max-width: 768px) {
+
     /* XYZ - move much higher */
     .edu-text-5 {
         bottom: 45% !important;
@@ -608,6 +618,7 @@
 
 /* Position in the GAP between image and paragraph box */
 @media (max-width: 768px) {
+
     /* XYZ - in the gap */
     .edu-text-5 {
         bottom: 32% !important;
