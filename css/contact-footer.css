@@ -9,6 +9,10 @@
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 40px;
     margin-top: 40px;
+    justify-items: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .social-card {
@@ -78,10 +82,13 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .social-embed iframe {
     border-radius: 15px;
+    width: 100%;
+    max-width: 100%;
 }
 
 .instagram-embed,
