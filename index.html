@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Seed IQ Soleh Genius Rawang</title>
+    <title>Smart Seed IQ Genius Rawang</title>
     <link rel="icon" href="assets/logo.png" type="image/png">
 
     <!-- Fonts -->
@@ -18,8 +18,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="css/main.css?v=3">
+    <link rel="stylesheet" href="css/main.css?v=2">
     <link rel="stylesheet" href="css/mobile-hero-fix.css?v=2">
+    <link rel="stylesheet" href="css/new-sections.css?v=1">
 </head>
 
 <body class="lang-en">
@@ -49,9 +50,12 @@
 
             <ul class="nav-links">
                 <li><a href="#home" data-lang="en">Home</a><a href="#home" data-lang="bm">Utama</a></li>
+                <li><a href="#about-us" data-lang="en">About</a><a href="#about-us" data-lang="bm">Tentang</a></li>
                 <li><a href="#programs" data-lang="en">Programs</a><a href="#programs" data-lang="bm">Program</a></li>
                 <li><a href="#gallery" data-lang="en">Gallery</a><a href="#gallery" data-lang="bm">Galeri</a></li>
                 <li><a href="#testimonials" data-lang="en">Reviews</a><a href="#testimonials" data-lang="bm">Ulasan</a>
+                </li>
+                <li><a href="#registration" data-lang="en">Register</a><a href="#registration" data-lang="bm">Daftar</a>
                 </li>
                 <li><a href="#contact" data-lang="en">Contact</a><a href="#contact" data-lang="bm">Hubungi</a></li>
             </ul>
@@ -121,8 +125,58 @@
         </div>
     </section>
 
+    <!-- About Us Section -->
+    <section id="about-us" class="about-us-section">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-lang="en">About Us</h2>
+                <h2 data-lang="bm">Tentang Kami</h2>
+            </div>
+
+            <div class="about-container">
+                <div class="about-content-wrapper">
+                    <div class="about-text">
+                        <h3 data-lang="en">Nurturing Future Leaders</h3>
+                        <h3 data-lang="bm">Memupuk Pemimpin Masa Depan</h3>
+
+                        <p data-lang="en">At Smart Seed IQ, we believe every child is a unique seed waiting to bloom.
+                            Our dedicated team provides a nurturing environment where Islamic values meet modern
+                            education.</p>
+                        <p data-lang="bm">Di Smart Seed IQ, kami percaya setiap kanak-kanak adalah benih unik yang
+                            menunggu untuk mekar. Pasukan kami menyediakan persekitaran yang memupuk di mana nilai-nilai
+                            Islam bertemu pendidikan moden.</p>
+
+                        <p data-lang="en">We focus on holistic development, ensuring your little ones grow into
+                            confident, capable, and compassionate individuals ready to face the world with faith and
+                            knowledge.</p>
+                        <p data-lang="bm">Kami memberi tumpuan kepada pembangunan holistik, memastikan si manja anda
+                            membesar menjadi individu yang yakin, berkebolehan, dan penyayang yang bersedia menghadapi
+                            dunia dengan iman dan ilmu.</p>
+                    </div>
+                    <div class="about-image-wrapper">
+                        <img src="assets/aboutus.jpg" alt="About Smart Seed IQ" class="about-img">
+                        <div class="smiley-decoration">
+                            <i class="fa-solid fa-face-smile"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Programs Section -->
-    <section id="programs" style="background-color: var(--bg-sky);">
+    <section id="programs" style="background-color: var(--bg-sky); position: relative; overflow: hidden;">
+        <!-- Storybook Decorations -->
+        <div class="decoration-floating"
+            style="top: 10%; left: 5%; color: var(--accent-pink); font-size: 3rem; opacity: 0.2;"><i
+                class="fa-solid fa-star"></i></div>
+        <div class="decoration-floating"
+            style="top: 20%; right: 8%; color: var(--accent-gold); font-size: 4rem; opacity: 0.2;"><i
+                class="fa-solid fa-sun"></i></div>
+        <div class="decoration-floating"
+            style="bottom: 15%; left: 8%; color: var(--primary); font-size: 2.5rem; opacity: 0.1;"><i
+                class="fa-solid fa-shapes"></i></div>
+
         <div class="container">
             <div class="section-title">
                 <h2 data-lang="en">Our Programs</h2>
@@ -196,7 +250,20 @@
     </section>
 
     <!-- Gallery Section -->
-    <section id="gallery" style="background-color: var(--bg-mint);">
+    <section id="gallery" style="background-color: var(--bg-mint); position: relative; overflow: hidden;">
+        <!-- Storybook Decorations -->
+        <div class="decoration-floating"
+            style="top: 5%; right: 5%; color: var(--secondary); font-size: 3rem; opacity: 0.15; transform: rotate(15deg);">
+            <i class="fa-solid fa-camera"></i>
+        </div>
+        <div class="decoration-floating"
+            style="bottom: 10%; left: 5%; color: var(--accent-blue); font-size: 3rem; opacity: 0.15; transform: rotate(-10deg);">
+            <i class="fa-solid fa-image"></i>
+        </div>
+        <div class="decoration-floating"
+            style="top: 50%; right: 2%; color: var(--accent-gold); font-size: 2rem; opacity: 0.3;"><i
+                class="fa-solid fa-heart"></i></div>
+
         <div class="container">
             <div class="section-title">
                 <h2 data-lang="en">Gallery</h2>
@@ -242,7 +309,15 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" style="background-color: var(--bg-cream);">
+    <section id="testimonials" style="background-color: var(--bg-cream); position: relative; overflow: hidden;">
+        <!-- Storybook Decorations -->
+        <div class="decoration-floating"
+            style="top: 10%; left: 10%; color: var(--accent-gold); font-size: 4rem; opacity: 0.1;"><i
+                class="fa-solid fa-quote-right"></i></div>
+        <div class="decoration-floating"
+            style="bottom: 20%; right: 10%; color: var(--accent-pink); font-size: 3rem; opacity: 0.15;"><i
+                class="fa-solid fa-comments"></i></div>
+
         <div class="container">
             <div class="section-title">
                 <h2 data-lang="en">What Parents Say</h2>
@@ -300,8 +375,8 @@
                     <div class="social-embed">
                         <iframe
                             src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FSSIQScentre&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-                            width="340" height="500" style="border:none;overflow:hidden;width:100%;max-width:100%;" scrolling="no" frameborder="0"
-                            allowfullscreen="true"
+                            width="340" height="500" style="border:none;overflow:hidden;width:100%;max-width:100%;"
+                            scrolling="no" frameborder="0" allowfullscreen="true"
                             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                     </div>
                     <a href="https://www.facebook.com/SSIQScentre" class="social-btn" target="_blank">
@@ -336,6 +411,45 @@
         </div>
     </section>
 
+    <!-- Registration Section -->
+    <section id="registration" class="registration-section">
+        <i class="fa-solid fa-pencil reg-bg-graphic reg-bg-1"></i>
+        <i class="fa-solid fa-rocket reg-bg-graphic reg-bg-2"></i>
+
+        <div class="container registration-content">
+            <div class="section-title">
+                <h2 data-lang="en">Registration</h2>
+                <h2 data-lang="bm">Pendaftaran</h2>
+            </div>
+
+            <h3 style="font-size: 2rem; color: var(--primary); margin-bottom: 20px; font-family: var(--font-playful);"
+                data-lang="en">Join Our Family Today!</h3>
+            <h3 style="font-size: 2rem; color: var(--primary); margin-bottom: 20px; font-family: var(--font-playful);"
+                data-lang="bm">Sertai Keluarga Kami Hari Ini!</h3>
+
+            <p style="font-size: 1.2rem; color: var(--text-muted); margin-bottom: 30px;" data-lang="en">Registration is
+                now open. Secure your child's spot by contacting us via WhatsApp or Email.</p>
+            <p style="font-size: 1.2rem; color: var(--text-muted); margin-bottom: 30px;" data-lang="bm">Pendaftaran kini
+                dibuka. Tempah tempat anak anda dengan menghubungi kami melalui WhatsApp atau Emel.</p>
+
+            <div class="registration-buttons">
+                <a href="https://wa.me/60134651310?text=I%20am%20interested%20to%20register%20my%20child"
+                    target="_blank" class="btn-reg btn-whatsapp-reg">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <span data-lang="en">WhatsApp Registration</span>
+                    <span data-lang="bm">Pendaftaran WhatsApp</span>
+                </a>
+
+                <a href="mailto:assakinahgeniussoleh@gmail.com?subject=Registration%20Inquiry"
+                    class="btn-reg btn-email-reg">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span data-lang="en">Email Registration</span>
+                    <span data-lang="bm">Pendaftaran Emel</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
         <div class="contact-bg-element"></div>
@@ -357,7 +471,8 @@
                             <h4 data-lang="en">Address</h4>
                             <h4 data-lang="bm">Alamat</h4>
                             <p>1, Jalan Desa 2/8, Bandar Country Homes,<br>48000 Rawang, Selangor</p>
-                            <a href="https://waze.com/ul?q=1%20Jalan%20Desa%202/8%2C%20Bandar%20Country%20Homes%2C%2048000%20Rawang%2C%20Selangor" target="_blank" class="btn-waze">
+                            <a href="https://waze.com/ul?q=1%20Jalan%20Desa%202/8%2C%20Bandar%20Country%20Homes%2C%2048000%20Rawang%2C%20Selangor"
+                                target="_blank" class="btn-waze">
                                 <span class="waze-icon">
                                     <i class="fa-solid fa-map-location-dot"></i>
                                 </span>
@@ -454,7 +569,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2025 Smart Seed IQ Soleh Center Rawang. All Rights Reserved.</p>
+                <p>&copy; 2025 Smart Seed IQ Genius Rawang. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
@@ -464,7 +579,4 @@
     <script src="script.js"></script>
 </body>
 
-
 </html>
-
-

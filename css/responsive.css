@@ -409,7 +409,7 @@
 
     /* Facebook embed - background container with more top space */
     .social-card:nth-child(1) .social-embed {
-        height: 260px;
+        height: 280px;
         min-height: 250px;
         max-height: 400px;
         padding-top: 20px;
