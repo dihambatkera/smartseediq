@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Popup Logic
+    // popup
     const popup = document.getElementById('promoPopup');
     const closePopup = document.querySelector('.close-popup');
 
-    // Show popup after 1 second
+    // popup show 1 second
     setTimeout(() => {
         popup.classList.add('active');
     }, 1000);
@@ -12,18 +12,17 @@ document.addEventListener('DOMContentLoaded', () => {
         popup.classList.remove('active');
     });
 
-    // Close popup when clicking outside
+    // close popup anywhere
     popup.addEventListener('click', (e) => {
         if (e.target === popup) {
             popup.classList.remove('active');
         }
     });
 
-    // Language Toggle - FIXED
+    // lang toggle
     const langToggle = document.getElementById('langToggle');
     if (langToggle) {
         langToggle.addEventListener('click', () => {
-            // Toggle between en and bm
             if (document.body.classList.contains('lang-en')) {
                 document.body.classList.remove('lang-en');
                 document.body.classList.add('lang-bm');
@@ -34,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Smooth Scroll for Navigation Links
+    // scroll
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -43,7 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
-                // Adjust for fixed header
                 const headerOffset = 90;
                 const elementPosition = targetElement.getBoundingClientRect().top;
                 const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
@@ -56,7 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Intersection Observer for Scroll Animations
     const observerOptions = {
         threshold: 0.1
     };
@@ -70,7 +67,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    // Animate sections on scroll
     document.querySelectorAll('section').forEach(section => {
         section.style.opacity = '0';
         section.style.transform = 'translateY(30px)';
@@ -78,7 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(section);
     });
 
-    // Mobile Menu Toggle
     const menuToggle = document.getElementById('mobile-menu');
     const navLinks = document.querySelector('.nav-links');
 
@@ -86,7 +81,6 @@ document.addEventListener('DOMContentLoaded', () => {
         menuToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
 
-            // Animate Hamburger
             const bars = menuToggle.querySelectorAll('.bar');
             if (navLinks.classList.contains('active')) {
                 bars[0].style.transform = 'rotate(-45deg) translate(-5px, 6px)';
@@ -99,7 +93,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Close menu when clicking a link
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
@@ -111,3 +104,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
